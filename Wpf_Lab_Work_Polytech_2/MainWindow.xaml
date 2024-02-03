@@ -1,0 +1,61 @@
+﻿<Window x:Class="Wpf_Lab_Work_Polytech_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Lab_Work_Polytech_2"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="350" ResizeMode="NoResize" >
+    <Grid Margin="0 100 0 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Name="b4" Margin="3" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="103" Grid.Column="0" Grid.Row="2" Click="f_b_4"/>
+        <Button Name="b5" Margin="3" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="1" Grid.Row="2" Click="f_b_5"/>
+        <Button Name="b6" Margin="3" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="2" Grid.Row="2" Click="f_b_6"/>
+        <Button Name="b_minus" Margin="3" Content="-" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="3" Grid.Row="2" Click="f_b_minus"/>
+
+
+
+        <Button Name="b7" Margin="3" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="103" Grid.Column="0" Grid.Row="1" Click="f_b_7"/>
+        <Button Name="b8" Margin="3" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="1" Grid.Row="1" Click="f_b_8"/>
+        <Button Name="b9" Margin="3" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="2" Grid.Row="1" Click="f_b_9"/>
+        <Button Name="b_X" Margin="3" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="3" Grid.Row="1" Click="f_b_X"/>
+
+
+
+        <Button x:Name="b_clear" Margin="3" Content="C" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="103" Grid.Column="0" Grid.Row="0" Click="f_b_clear"/>
+        <Button Name="b_percent" Margin="3" Content="%" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="1" Grid.Row="0" Click="f_b_percent"/>
+        <Button Name="b_backspace" Margin="3" Content="Backspace" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="2" Grid.Row="0" Click="f_b_backspace"/>
+        <Button Name="b_slesh" Margin="3" Content="/" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="3" Grid.Row="0" Click="f_b_slesh"/>
+
+
+        <Button Name="b1" Margin="3" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="103" Grid.Column="0" Grid.Row="3" Click="f_b_1"/>
+        <Button Name="b2" Margin="3" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="1" Grid.Row="3" Click="f_b_2"/>
+        <Button Name="b3" Margin="3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="2" Grid.Row="3" Click="f_b_3"/>
+        <Button Name="b_plus" Margin="3" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="3" Grid.Row="3" Click="f_b_plus"/>
+
+
+
+
+        <Button Name="b00" Margin="3" Content="00" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="103" Grid.Column="0" Grid.Row="4" Click="f_b_00"/>
+        <Button Name="b0" Margin="3" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="1" Grid.Row="4" Click="f_b_0"/>
+        <Button Name="b_point" Margin="3" Content="," HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="2" Grid.Row="4" Click="f_b_point"/>
+        <Button x:Name="b_equels" Margin="3" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="88" Grid.Column="3" Grid.Row="4" Click="f_b_equels"/>
+        
+        
+        
+        <TextBox Name = "output_displ" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="5,-97,0,0" TextWrapping="Wrap" FontSize="48" VerticalAlignment="Top" Width="338" Height="85"/>
+
+    </Grid>
+</Window>
